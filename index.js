@@ -5,12 +5,12 @@ const axios = require('axios');
 // Use the token from .env file
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
-// 🔹 Aapke Telegram Channels
-const channel1 = '@mines_Prediction';
-const channel2 = '@goalgame_prediction';
-const channel3 = '@team19_secrets';
-const channel4 = '@team19sachin';
-const channel5 = '@+gpt7bMQia4kyMzJl';
+// 🔹 Aapke Telegram Channels (Channel IDs)
+const channel1 = '-1002212177790'; // mines prediction channel
+const channel2 = '-1002345203858'; // goal game prediction channel
+const channel3 = '-1002185963371'; // team 19 secrets
+const channel4 = '-1002382031113'; // wingo prediction
+const channel5 = '-1002262588651'; // prediction tool selling
 
 // 🔹 Ad Configuration
 const adVideo = 'https://t.me/Only_4_photos/6';
@@ -23,8 +23,8 @@ const showAd = async (ctx) => {
         {
             caption: "📢 *Telegram Ad* 📢\n\n" +   
                      "🚀 *Exclusive Winning Strategy!*\n\n" +
-                     "🎲 *Live Proof ₹477 to ₹27037 Just IN 3 Minute*\n" +
-                     "🎲 *Big & Small Hack | Color Prediction Game*\n" +
+                     "🎲 * ₹968 to ₹7291 Just IN 3 Minute*\n" +
+                     "🎲 *Big small game tool | Color Prediction Game*\n" +
                      "✅ Works in *all* games\n" +
                      "🎯 Higher accuracy, real-time results!\n" +
                      "💸 Start winning today! 🔥",
@@ -49,15 +49,15 @@ bot.start(async (ctx) => {
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟭", url: `https://t.me/${channel1.replace('@', '')}` },
-                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟮", url: `https://t.me/${channel2.replace('@', '')}` }
+                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟭", url: "https://telegram.me/+XmYJ9G_z_D5kZGQ1" },
+                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟮", url: "https://t.me/+Ilk9wZ1OsMdiODM1" }
                     ],
                     [
-                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟯", url: `https://t.me/${channel3.replace('@', '')}` },
-                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟰", url: `https://t.me/${channel4.replace('@', '')}` }
+                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟯", url: "https://telegram.me/+anWRjjpfP3NjYjI9" },
+                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟰", url: "https://t.me/+6PJfm3k9NThmOThl" }
                     ],
                     [
-                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟱", url: `https://t.me/${channel5.replace('@', '')}` }
+                        { text: "📢 𝗝𝗢𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝟱", url: "https://t.me/+gpt7bMQia4kyMzJl" }
                     ],
                     [
                         { text: "✅ 𝗩𝗘𝗥𝗜𝗙𝗬", callback_data: "verify" }
